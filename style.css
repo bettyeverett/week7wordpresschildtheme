@@ -1,6 +1,15 @@
 /*
  Theme Name:   Betty's First Theme
- Author:       John Doe
+ Author:       Betty Evs
  Description:  This is the first theme created by Betty; a child theme of WordPress' Twenty Sixteen theme
  Template:     twentysixteen
 */
+
+.home .entry-content {
+    color:red;
+}
+
+/* Block quote wasn't inheriting the red text colour */
+.home .entry-content .wp-block-quote {
+    color: inherit
+}
