@@ -5,11 +5,7 @@
  Template:     twentysixteen
 */
 
-.home .entry-content {
-    color:red;
-}
-
-/* Block quote wasn't inheriting the red text colour */
+.home .entry-content,
 .home .entry-content .wp-block-quote {
-    color: inherit
+    color:red;
 }
