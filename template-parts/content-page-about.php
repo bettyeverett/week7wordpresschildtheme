@@ -30,8 +30,20 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			)
 		);
+
+		if ( get_field( 'phone_number' ) ){ ?>
+			<h2> <?php the_field( 'phone_number' )?> </h2>
+		<?php }
 		?>
-	</div><!-- .entry-content -->
+		
+	</div>
+	
+	<div>
+			<?php
+		if ( get_field( 'phone_number' ) ){  ?>
+			<h2> <?php the_field( 'phone_number' )?> </h2>
+		<?php } ?>
+	</div>
 
 	<?php
 		edit_post_link(
